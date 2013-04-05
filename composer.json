@@ -1,0 +1,8 @@
+{
+    "name": "pokelabo/core",
+    "autoload": {
+        "psr-0": {
+            "pokelabo": "src/"
+        }
+    }
+}

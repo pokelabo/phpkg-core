@@ -32,10 +32,17 @@ class ConfigRepository {
     protected static $_config_map;
 
     /**
-     * 設定ディレクトリを設定
+     * 設定ディレクトリを追加
      */
     public static function addConfigDir($config_dir) {
         static::$_config_dirs[] = $config_dir;
+    }
+
+    /**
+     * 設定ディレクトリを先頭に追加
+     */
+    public static function prependConfigDir($config_dir) {
+        array_unshift(static::$_config_dirs, $config_dir);
     }
 
     /**
